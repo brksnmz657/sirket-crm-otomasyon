@@ -156,3 +156,30 @@ with sil_col2:
             st.rerun()
     else:
         st.info("Silinecek firma yok.")
+# --- FOOTER (KİŞİSEL BİLGİLER VE İLETİŞİM) ---
+st.write("---")
+st.markdown(
+    """
+    <style>
+    .footer {
+        text-align: center;
+        color: #777777;
+        padding: 10px;
+        line-height: 1.6;
+    }
+    .footer a {
+        color: #ff4b4b;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    </style>
+    <div class="footer">
+        <p><b>Geliştirici:</b> Burak Sönmez</p>
+        <p>🎓 ESOGÜ - Siyaset Bilimi ve Kamu Yönetimi &nbsp;|&nbsp; 🎓 AÖF - Yönetim Bilişim Sistemleri</p>
+        <p>📩 <a href="mailto:sonmezburak2007@gmail.com">sonmezburak2007@gmail.com</a> &nbsp;|&nbsp; 💼 <a href="https://www.linkedin.com/in/buraksönmez" target="_blank">LinkedIn Profilim</a></p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
